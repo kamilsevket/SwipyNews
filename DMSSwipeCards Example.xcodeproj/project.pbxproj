@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02C4A93F0FBA6D06D8DB3ECA /* Pods_DMSSwipeCards_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16F537482DD7B007CEDB5703 /* Pods_DMSSwipeCards_Example.framework */; };
 		BF6A497F1FB9D92F0085D2CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6A497E1FB9D92F0085D2CC /* AppDelegate.swift */; };
 		BF6A49811FB9D92F0085D2CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6A49801FB9D92F0085D2CC /* ViewController.swift */; };
 		BF6A49841FB9D92F0085D2CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF6A49821FB9D92F0085D2CC /* Main.storyboard */; };
 		BF6A49861FB9D92F0085D2CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF6A49851FB9D92F0085D2CC /* Assets.xcassets */; };
 		BF6A49891FB9D92F0085D2CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF6A49871FB9D92F0085D2CC /* LaunchScreen.storyboard */; };
+		BF6A49911FB9DDB10085D2CC /* Kamil.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BF6A49901FB9DDB10085D2CC /* Kamil.jpg */; };
+		BF6A49931FBA0EC30085D2CC /* Ozan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BF6A49921FBA0EC30085D2CC /* Ozan.jpg */; };
+		BF6A49961FBA0EF60085D2CC /* Fırat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BF6A49941FBA0EF60085D2CC /* Fırat.jpg */; };
+		BF6A49971FBA0EF60085D2CC /* Onat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BF6A49951FBA0EF60085D2CC /* Onat.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		16F537482DD7B007CEDB5703 /* Pods_DMSSwipeCards_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DMSSwipeCards_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6A497B1FB9D92F0085D2CC /* DMSSwipeCards Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DMSSwipeCards Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6A497E1FB9D92F0085D2CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF6A49801FB9D92F0085D2CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,12 @@
 		BF6A49851FB9D92F0085D2CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF6A49881FB9D92F0085D2CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF6A498A1FB9D92F0085D2CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF6A49901FB9DDB10085D2CC /* Kamil.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Kamil.jpg; sourceTree = "<group>"; };
+		BF6A49921FBA0EC30085D2CC /* Ozan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Ozan.jpg; sourceTree = "<group>"; };
+		BF6A49941FBA0EF60085D2CC /* Fırat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Fırat.jpg"; sourceTree = "<group>"; };
+		BF6A49951FBA0EF60085D2CC /* Onat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Onat.jpg; sourceTree = "<group>"; };
+		E5C700D5D71105729BABB142 /* Pods-DMSSwipeCards Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DMSSwipeCards Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DMSSwipeCards Example/Pods-DMSSwipeCards Example.debug.xcconfig"; sourceTree = "<group>"; };
+		EE7F30E770E882C8ADC78517 /* Pods-DMSSwipeCards Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DMSSwipeCards Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-DMSSwipeCards Example/Pods-DMSSwipeCards Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02C4A93F0FBA6D06D8DB3ECA /* Pods_DMSSwipeCards_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B055C4AA1D9CC23961FB0E85 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E5C700D5D71105729BABB142 /* Pods-DMSSwipeCards Example.debug.xcconfig */,
+				EE7F30E770E882C8ADC78517 /* Pods-DMSSwipeCards Example.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BDFD10DFCF1E99260E653962 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				16F537482DD7B007CEDB5703 /* Pods_DMSSwipeCards_Example.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BF6A49721FB9D92F0085D2CC = {
 			isa = PBXGroup;
 			children = (
 				BF6A497D1FB9D92F0085D2CC /* DMSSwipeCards Example */,
 				BF6A497C1FB9D92F0085D2CC /* Products */,
+				B055C4AA1D9CC23961FB0E85 /* Pods */,
+				BDFD10DFCF1E99260E653962 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,6 +89,10 @@
 				BF6A497E1FB9D92F0085D2CC /* AppDelegate.swift */,
 				BF6A49801FB9D92F0085D2CC /* ViewController.swift */,
 				BF6A49821FB9D92F0085D2CC /* Main.storyboard */,
+				BF6A49901FB9DDB10085D2CC /* Kamil.jpg */,
+				BF6A49921FBA0EC30085D2CC /* Ozan.jpg */,
+				BF6A49941FBA0EF60085D2CC /* Fırat.jpg */,
+				BF6A49951FBA0EF60085D2CC /* Onat.jpg */,
 				BF6A49851FB9D92F0085D2CC /* Assets.xcassets */,
 				BF6A49871FB9D92F0085D2CC /* LaunchScreen.storyboard */,
 				BF6A498A1FB9D92F0085D2CC /* Info.plist */,
@@ -71,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF6A498D1FB9D92F0085D2CC /* Build configuration list for PBXNativeTarget "DMSSwipeCards Example" */;
 			buildPhases = (
+				6A1686D45069018ACE16819F /* [CP] Check Pods Manifest.lock */,
 				BF6A49771FB9D92F0085D2CC /* Sources */,
 				BF6A49781FB9D92F0085D2CC /* Frameworks */,
 				BF6A49791FB9D92F0085D2CC /* Resources */,
+				359B076104265AF3D3BC0599 /* [CP] Embed Pods Frameworks */,
+				C20F65BCBFDC24978349CD94 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,13 +162,73 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF6A49961FBA0EF60085D2CC /* Fırat.jpg in Resources */,
 				BF6A49891FB9D92F0085D2CC /* LaunchScreen.storyboard in Resources */,
+				BF6A49931FBA0EC30085D2CC /* Ozan.jpg in Resources */,
 				BF6A49861FB9D92F0085D2CC /* Assets.xcassets in Resources */,
 				BF6A49841FB9D92F0085D2CC /* Main.storyboard in Resources */,
+				BF6A49911FB9DDB10085D2CC /* Kamil.jpg in Resources */,
+				BF6A49971FBA0EF60085D2CC /* Onat.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		359B076104265AF3D3BC0599 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DMSSwipeCards Example/Pods-DMSSwipeCards Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/DMSwipeCards/DMSwipeCards.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DMSwipeCards.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DMSSwipeCards Example/Pods-DMSSwipeCards Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A1686D45069018ACE16819F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DMSSwipeCards Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C20F65BCBFDC24978349CD94 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DMSSwipeCards Example/Pods-DMSSwipeCards Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BF6A49771FB9D92F0085D2CC /* Sources */ = {
@@ -272,11 +371,13 @@
 		};
 		BF6A498E1FB9D92F0085D2CC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5C700D5D71105729BABB142 /* Pods-DMSSwipeCards Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AYR49RPHLW;
 				INFOPLIST_FILE = "DMSSwipeCards Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "letItBe-Solutions.DMSSwipeCards-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -287,11 +388,13 @@
 		};
 		BF6A498F1FB9D92F0085D2CC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE7F30E770E882C8ADC78517 /* Pods-DMSSwipeCards Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AYR49RPHLW;
 				INFOPLIST_FILE = "DMSSwipeCards Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "letItBe-Solutions.DMSSwipeCards-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
