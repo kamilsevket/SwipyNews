@@ -8,19 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		02C4A93F0FBA6D06D8DB3ECA /* Pods_DMSSwipeCards_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16F537482DD7B007CEDB5703 /* Pods_DMSSwipeCards_Example.framework */; };
+		BF4B30681FBC75930038C4A2 /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF4B30671FBC75930038C4A2 /* Slide.xib */; };
+		BF4B306A1FBC75AE0038C4A2 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4B30691FBC75AE0038C4A2 /* Slide.swift */; };
+		BF4B306C1FBCC03A0038C4A2 /* Onat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BF4B306B1FBCC0390038C4A2 /* Onat.jpg */; };
+		BF4B306E1FBCF9120038C4A2 /* Fırat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BF4B306D1FBCF9120038C4A2 /* Fırat.jpg */; };
 		BF6A497F1FB9D92F0085D2CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6A497E1FB9D92F0085D2CC /* AppDelegate.swift */; };
 		BF6A49811FB9D92F0085D2CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6A49801FB9D92F0085D2CC /* ViewController.swift */; };
 		BF6A49841FB9D92F0085D2CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF6A49821FB9D92F0085D2CC /* Main.storyboard */; };
 		BF6A49861FB9D92F0085D2CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF6A49851FB9D92F0085D2CC /* Assets.xcassets */; };
 		BF6A49891FB9D92F0085D2CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF6A49871FB9D92F0085D2CC /* LaunchScreen.storyboard */; };
-		BF6A49911FB9DDB10085D2CC /* Kamil.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BF6A49901FB9DDB10085D2CC /* Kamil.jpg */; };
-		BF6A49931FBA0EC30085D2CC /* Ozan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BF6A49921FBA0EC30085D2CC /* Ozan.jpg */; };
-		BF6A49961FBA0EF60085D2CC /* Fırat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BF6A49941FBA0EF60085D2CC /* Fırat.jpg */; };
-		BF6A49971FBA0EF60085D2CC /* Onat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BF6A49951FBA0EF60085D2CC /* Onat.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		16F537482DD7B007CEDB5703 /* Pods_DMSSwipeCards_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DMSSwipeCards_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF4B30671FBC75930038C4A2 /* Slide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
+		BF4B30691FBC75AE0038C4A2 /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
+		BF4B306B1FBCC0390038C4A2 /* Onat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Onat.jpg; sourceTree = "<group>"; };
+		BF4B306D1FBCF9120038C4A2 /* Fırat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Fırat.jpg"; sourceTree = "<group>"; };
 		BF6A497B1FB9D92F0085D2CC /* DMSSwipeCards Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DMSSwipeCards Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6A497E1FB9D92F0085D2CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF6A49801FB9D92F0085D2CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,10 +32,6 @@
 		BF6A49851FB9D92F0085D2CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF6A49881FB9D92F0085D2CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF6A498A1FB9D92F0085D2CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BF6A49901FB9DDB10085D2CC /* Kamil.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Kamil.jpg; sourceTree = "<group>"; };
-		BF6A49921FBA0EC30085D2CC /* Ozan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Ozan.jpg; sourceTree = "<group>"; };
-		BF6A49941FBA0EF60085D2CC /* Fırat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Fırat.jpg"; sourceTree = "<group>"; };
-		BF6A49951FBA0EF60085D2CC /* Onat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Onat.jpg; sourceTree = "<group>"; };
 		E5C700D5D71105729BABB142 /* Pods-DMSSwipeCards Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DMSSwipeCards Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DMSSwipeCards Example/Pods-DMSSwipeCards Example.debug.xcconfig"; sourceTree = "<group>"; };
 		EE7F30E770E882C8ADC78517 /* Pods-DMSSwipeCards Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DMSSwipeCards Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-DMSSwipeCards Example/Pods-DMSSwipeCards Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,6 +65,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BF4B30661FBC757B0038C4A2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BF4B30671FBC75930038C4A2 /* Slide.xib */,
+				BF4B30691FBC75AE0038C4A2 /* Slide.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		BF6A49721FB9D92F0085D2CC = {
 			isa = PBXGroup;
 			children = (
@@ -86,13 +95,12 @@
 		BF6A497D1FB9D92F0085D2CC /* DMSSwipeCards Example */ = {
 			isa = PBXGroup;
 			children = (
+				BF4B30661FBC757B0038C4A2 /* View */,
 				BF6A497E1FB9D92F0085D2CC /* AppDelegate.swift */,
 				BF6A49801FB9D92F0085D2CC /* ViewController.swift */,
+				BF4B306B1FBCC0390038C4A2 /* Onat.jpg */,
+				BF4B306D1FBCF9120038C4A2 /* Fırat.jpg */,
 				BF6A49821FB9D92F0085D2CC /* Main.storyboard */,
-				BF6A49901FB9DDB10085D2CC /* Kamil.jpg */,
-				BF6A49921FBA0EC30085D2CC /* Ozan.jpg */,
-				BF6A49941FBA0EF60085D2CC /* Fırat.jpg */,
-				BF6A49951FBA0EF60085D2CC /* Onat.jpg */,
 				BF6A49851FB9D92F0085D2CC /* Assets.xcassets */,
 				BF6A49871FB9D92F0085D2CC /* LaunchScreen.storyboard */,
 				BF6A498A1FB9D92F0085D2CC /* Info.plist */,
@@ -162,13 +170,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF6A49961FBA0EF60085D2CC /* Fırat.jpg in Resources */,
+				BF4B306E1FBCF9120038C4A2 /* Fırat.jpg in Resources */,
 				BF6A49891FB9D92F0085D2CC /* LaunchScreen.storyboard in Resources */,
-				BF6A49931FBA0EC30085D2CC /* Ozan.jpg in Resources */,
+				BF4B30681FBC75930038C4A2 /* Slide.xib in Resources */,
+				BF4B306C1FBCC03A0038C4A2 /* Onat.jpg in Resources */,
 				BF6A49861FB9D92F0085D2CC /* Assets.xcassets in Resources */,
 				BF6A49841FB9D92F0085D2CC /* Main.storyboard in Resources */,
-				BF6A49911FB9DDB10085D2CC /* Kamil.jpg in Resources */,
-				BF6A49971FBA0EF60085D2CC /* Onat.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF4B306A1FBC75AE0038C4A2 /* Slide.swift in Sources */,
 				BF6A49811FB9D92F0085D2CC /* ViewController.swift in Sources */,
 				BF6A497F1FB9D92F0085D2CC /* AppDelegate.swift in Sources */,
 			);
