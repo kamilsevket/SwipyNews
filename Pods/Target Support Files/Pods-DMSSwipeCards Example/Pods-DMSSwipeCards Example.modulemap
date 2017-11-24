@@ -1,0 +1,6 @@
+framework module Pods_DMSSwipeCards_Example {
+  umbrella header "Pods-DMSSwipeCards Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
