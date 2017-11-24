@@ -10,8 +10,6 @@
 		02C4A93F0FBA6D06D8DB3ECA /* Pods_DMSSwipeCards_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16F537482DD7B007CEDB5703 /* Pods_DMSSwipeCards_Example.framework */; };
 		BF4B30681FBC75930038C4A2 /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF4B30671FBC75930038C4A2 /* Slide.xib */; };
 		BF4B306A1FBC75AE0038C4A2 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4B30691FBC75AE0038C4A2 /* Slide.swift */; };
-		BF4B306C1FBCC03A0038C4A2 /* Onat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BF4B306B1FBCC0390038C4A2 /* Onat.jpg */; };
-		BF4B306E1FBCF9120038C4A2 /* Fırat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BF4B306D1FBCF9120038C4A2 /* Fırat.jpg */; };
 		BF6A497F1FB9D92F0085D2CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6A497E1FB9D92F0085D2CC /* AppDelegate.swift */; };
 		BF6A49811FB9D92F0085D2CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6A49801FB9D92F0085D2CC /* ViewController.swift */; };
 		BF6A49841FB9D92F0085D2CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF6A49821FB9D92F0085D2CC /* Main.storyboard */; };
@@ -23,9 +21,7 @@
 		16F537482DD7B007CEDB5703 /* Pods_DMSSwipeCards_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DMSSwipeCards_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF4B30671FBC75930038C4A2 /* Slide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
 		BF4B30691FBC75AE0038C4A2 /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
-		BF4B306B1FBCC0390038C4A2 /* Onat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Onat.jpg; sourceTree = "<group>"; };
-		BF4B306D1FBCF9120038C4A2 /* Fırat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Fırat.jpg"; sourceTree = "<group>"; };
-		BF6A497B1FB9D92F0085D2CC /* DMSSwipeCards Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DMSSwipeCards Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF6A497B1FB9D92F0085D2CC /* SwipyNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwipyNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6A497E1FB9D92F0085D2CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF6A49801FB9D92F0085D2CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BF6A49831FB9D92F0085D2CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -77,7 +73,7 @@
 		BF6A49721FB9D92F0085D2CC = {
 			isa = PBXGroup;
 			children = (
-				BF6A497D1FB9D92F0085D2CC /* DMSSwipeCards Example */,
+				BF6A497D1FB9D92F0085D2CC /* SwipyNews */,
 				BF6A497C1FB9D92F0085D2CC /* Products */,
 				B055C4AA1D9CC23961FB0E85 /* Pods */,
 				BDFD10DFCF1E99260E653962 /* Frameworks */,
@@ -87,33 +83,31 @@
 		BF6A497C1FB9D92F0085D2CC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BF6A497B1FB9D92F0085D2CC /* DMSSwipeCards Example.app */,
+				BF6A497B1FB9D92F0085D2CC /* SwipyNews.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BF6A497D1FB9D92F0085D2CC /* DMSSwipeCards Example */ = {
+		BF6A497D1FB9D92F0085D2CC /* SwipyNews */ = {
 			isa = PBXGroup;
 			children = (
 				BF4B30661FBC757B0038C4A2 /* View */,
 				BF6A497E1FB9D92F0085D2CC /* AppDelegate.swift */,
 				BF6A49801FB9D92F0085D2CC /* ViewController.swift */,
-				BF4B306B1FBCC0390038C4A2 /* Onat.jpg */,
-				BF4B306D1FBCF9120038C4A2 /* Fırat.jpg */,
 				BF6A49821FB9D92F0085D2CC /* Main.storyboard */,
 				BF6A49851FB9D92F0085D2CC /* Assets.xcassets */,
 				BF6A49871FB9D92F0085D2CC /* LaunchScreen.storyboard */,
 				BF6A498A1FB9D92F0085D2CC /* Info.plist */,
 			);
-			path = "DMSSwipeCards Example";
+			path = SwipyNews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BF6A497A1FB9D92F0085D2CC /* DMSSwipeCards Example */ = {
+		BF6A497A1FB9D92F0085D2CC /* SwipyNews */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BF6A498D1FB9D92F0085D2CC /* Build configuration list for PBXNativeTarget "DMSSwipeCards Example" */;
+			buildConfigurationList = BF6A498D1FB9D92F0085D2CC /* Build configuration list for PBXNativeTarget "SwipyNews" */;
 			buildPhases = (
 				6A1686D45069018ACE16819F /* [CP] Check Pods Manifest.lock */,
 				BF6A49771FB9D92F0085D2CC /* Sources */,
@@ -126,9 +120,9 @@
 			);
 			dependencies = (
 			);
-			name = "DMSSwipeCards Example";
+			name = SwipyNews;
 			productName = "DMSSwipeCards Example";
-			productReference = BF6A497B1FB9D92F0085D2CC /* DMSSwipeCards Example.app */;
+			productReference = BF6A497B1FB9D92F0085D2CC /* SwipyNews.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -147,7 +141,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BF6A49761FB9D92F0085D2CC /* Build configuration list for PBXProject "DMSSwipeCards Example" */;
+			buildConfigurationList = BF6A49761FB9D92F0085D2CC /* Build configuration list for PBXProject "SwipyNews" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -160,7 +154,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BF6A497A1FB9D92F0085D2CC /* DMSSwipeCards Example */,
+				BF6A497A1FB9D92F0085D2CC /* SwipyNews */,
 			);
 		};
 /* End PBXProject section */
@@ -170,10 +164,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF4B306E1FBCF9120038C4A2 /* Fırat.jpg in Resources */,
 				BF6A49891FB9D92F0085D2CC /* LaunchScreen.storyboard in Resources */,
 				BF4B30681FBC75930038C4A2 /* Slide.xib in Resources */,
-				BF4B306C1FBCC03A0038C4A2 /* Onat.jpg in Resources */,
 				BF6A49861FB9D92F0085D2CC /* Assets.xcassets in Resources */,
 				BF6A49841FB9D92F0085D2CC /* Main.storyboard in Resources */,
 			);
@@ -191,11 +183,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-DMSSwipeCards Example/Pods-DMSSwipeCards Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/DMSwipeCards/DMSwipeCards.framework",
+				"${BUILT_PRODUCTS_DIR}/PreviewTransition/PreviewTransition.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DMSwipeCards.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PreviewTransition.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -384,10 +378,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AYR49RPHLW;
-				INFOPLIST_FILE = "DMSSwipeCards Example/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/SwipyNews/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "letItBe-Solutions.DMSSwipeCards-Example";
+				PRODUCT_BUNDLE_IDENTIFIER = "letItBe-Solutions.SwipyNews";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -401,10 +395,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AYR49RPHLW;
-				INFOPLIST_FILE = "DMSSwipeCards Example/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/SwipyNews/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "letItBe-Solutions.DMSSwipeCards-Example";
+				PRODUCT_BUNDLE_IDENTIFIER = "letItBe-Solutions.SwipyNews";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -414,7 +408,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BF6A49761FB9D92F0085D2CC /* Build configuration list for PBXProject "DMSSwipeCards Example" */ = {
+		BF6A49761FB9D92F0085D2CC /* Build configuration list for PBXProject "SwipyNews" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BF6A498B1FB9D92F0085D2CC /* Debug */,
@@ -423,7 +417,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BF6A498D1FB9D92F0085D2CC /* Build configuration list for PBXNativeTarget "DMSSwipeCards Example" */ = {
+		BF6A498D1FB9D92F0085D2CC /* Build configuration list for PBXNativeTarget "SwipyNews" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BF6A498E1FB9D92F0085D2CC /* Debug */,

@@ -10,9 +10,9 @@ import UIKit
 import DMSwipeCards
 import Alamofire
 
-
 var boo = false
-
+var savedImageArr = [String]()
+var readListDic: [String: String] = [:]
 
 class ViewController: UIViewController, UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource {
 
@@ -33,18 +33,22 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITableViewDelegat
     var imageArray = [String]()
     var readArray = [String]()
     var imageUrlArray = [String]()
-    var readListDic: [String: String] = [:]
+    
     var descriptionArray = [String]()
     var x = 0
     var labelSize = 25
     var labelSize2 = 12
     var dictionary: [String: String] = [:]
     var imageView = UIImageView()
-    var savedImageArr = [String]()
+   
     var myTableView: UITableView!
+    let cellSpacingHeight: CGFloat = 50
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+
+
         
     
         //----------------SCROLL VIEW WITH SLIDER--------------
@@ -75,9 +79,16 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITableViewDelegat
    
         let slide2:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
         slide2.backgroundImage.layer.insertSublayer(gradientGreen, at: 0)
+ 
        
         let slide3:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
         slide3.backgroundImage.layer.insertSublayer(gradientRed, at: 0)
+        
+  
+        
+  
+    
+        
         let slides = [slide1,slide2,slide3]
         
         setupSlideScrollView(slides: slides)
@@ -85,34 +96,43 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITableViewDelegat
         pageControl.currentPage = 0
         view.bringSubview(toFront: pageControl)
         
-        
+    
         
         
         
          //----------------JSON DATA WITH ALAMOFIRE--------------
-        Alamofire.request("https://newsapi.org/v1/articles?source=mashable&sortBy=top&apiKey=a0206fa4f2034d1496ad852f9a26eca4").responseJSON { response in
         
+
+        let jsonUrl = "https://newsapi.org/v2/top-headlines?sources=the-next-web&apiKey=a0206fa4f2034d1496ad852f9a26eca4"
+       
+        Alamofire.request(jsonUrl).responseJSON { response in
+    
             
+        
             if let json = response.result.value  as? [String: Any],
-                let artic = json["articles"] as? [[String:String]] {
+                let artic = json["articles"] as? [[String:Any]] {
+                
+                let deneme2 = json["articles"]
+                print(deneme2!)
                 
                 print("JSON: \(String(describing: json["status"]))") // serialized json response
               
                 for obj in artic{
+                 
+                    self.imageArray.append(obj["title"]! as! String)
+                    self.descriptionArray.append(obj["description"]! as! String )
+                    self.imageUrlArray.append(obj["urlToImage"]! as! String)
                     
-                    self.imageArray.append(obj["title"]!)
-                    self.descriptionArray.append(obj["description"]!)
-                    self.imageUrlArray.append(obj["urlToImage"]!)
-                
-                    
+                    print("selamdasdasdadf")
                     for (index, element) in self.imageArray.enumerated()
                     {
                         self.dictionary[element] = self.descriptionArray[index]
                         print(self.dictionary)
-                        
                     }
                     
+                    
                     }
+                
                 
                 let jsonStatus = json["status"]! as! String
                 if jsonStatus == "ok" {
@@ -128,25 +148,26 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITableViewDelegat
                         }
                     }else{
                         print("error")
-                    } }
-            
+                    }
+                
             }
+
+                
+                
+                }
             
         }
         
         
-       // self.view.backgroundColor = UIColor(white: 0.95, alpha: 1.0)
         
-        /*
-         * In this example we're using `String` as a type.
-         * You can use DMSwipeCardsView though with any custom class.
-         */
+        self.view.backgroundColor = UIColor(white: 0.95, alpha: 1.0)
         
         
-         //----------------CREATE CONTAINER FOR SWIPE VIEW--------------
         let viewGenerator: (String, CGRect) -> (UIView) = { (element: String, frame: CGRect) -> (UIView) in
             let container = UIView(frame: CGRect(x: 30, y: 20, width: frame.width - 60, height: frame.height - 40))
-            container.isUserInteractionEnabled = true
+            
+           
+           
             self.imageView = UIImageView(frame: container.bounds)
             
             let imgURL = NSURL(string: self.imageUrlArray[0])
@@ -237,9 +258,6 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITableViewDelegat
             label.font = UIFont.systemFont(ofSize: 24)
             label.textAlignment = .center
            
-            
-
-            
             
             return label
         }
@@ -390,6 +408,17 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITableViewDelegat
         if x == 0 {
             
             
+            
+            let blueColor = UIColor(red: 33/255, green: 150/255, blue: 243/255, alpha: 1.0)
+            let gradientBlue: CAGradientLayer = CAGradientLayer()
+            gradientBlue.frame = self.view.frame
+            gradientBlue.colors = [UIColor.clear.cgColor, blueColor.cgColor]
+            gradientBlue.locations = [0.0, 1.0]
+            
+            let slide1:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
+            slide1.backgroundImage.layer.insertSublayer(gradientBlue, at: 0)
+            
+            slide1.addSubview(self.swipeView)
             self.swipeView.addCards(self.imageArray, onTop: true)
            
             if self.imageUrlArray[0] != "" {
@@ -418,9 +447,6 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITableViewDelegat
 }
 
 
-
-
-
 //----------------EXTENSION FOR LEFT-RIGHT SWIPE FUNCTIONS--------------
 extension ViewController: DMSwipeCardsViewDelegate {
     func swipedLeft(_ object: Any) {
@@ -445,29 +471,33 @@ extension ViewController: DMSwipeCardsViewDelegate {
         print("Swiped right: \(object)")
         
         let key = dictionary.index(forKey: object as! String)
-        print(dictionary[key!].value)
         
         readListDic.updateValue(dictionary[key!].value, forKey: object as! String)
         readArray.append(object as! String)
         
+        print(imageUrlArray.count)
+        print(x)
+        print(imageUrlArray.count - x)
         x = x+1
-        if x == imageArray.count {
-            x=0
-            print(readListDic)
-        }
-      
+        
         let imgURL = NSURL(string: self.imageUrlArray[self.x])
         
-        
         if imgURL != nil {
+            
             let data = NSData(contentsOf: (imgURL as URL?)!)
             self.imageView.image = UIImage(data: data! as Data)
+            
             savedImageArr.append(self.imageUrlArray[(self.x)-1])
+            
+            if x == imageArray.count - 1 {
+                x=0
+                
+            }
+            
         }
-        print(readListDic)
+   
         self.myTableView.reloadData()
        
-        
     }
     
     func cardTapped(_ object: Any) {
@@ -478,7 +508,6 @@ extension ViewController: DMSwipeCardsViewDelegate {
         detail.addAction(UIAlertAction(title: "Okudum", style: .default, handler: { (a: UIAlertAction) in } ) )
         self.present(detail, animated: true, completion: nil)
         
-     
         
     }
     
@@ -499,7 +528,6 @@ extension ViewController: DMSwipeCardsViewDelegate {
         }
     }
 
-    
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
      
         let pageIndex = round(scrollView.contentOffset.x/view.frame.width)
@@ -530,10 +558,6 @@ extension ViewController: DMSwipeCardsViewDelegate {
         
     }
     
- 
-
-    
-    
     
     @objc func dragEvent(gesture: UIPanGestureRecognizer) {
         // Do not change Here
@@ -560,13 +584,11 @@ extension ViewController: DMSwipeCardsViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
  
-        let value = self.readListDic[readArray[indexPath.row]]
+        let value = readListDic[readArray[indexPath.row]]
       
         let detail = UIAlertController(title: readArray[indexPath.row], message: value, preferredStyle: .actionSheet)
         detail.addAction(UIAlertAction(title: "Okudum", style: .default, handler: { (a: UIAlertAction) in } ) )
         self.present(detail, animated: true, completion: nil)
-        
- 
         
     }
     
@@ -575,7 +597,11 @@ extension ViewController: DMSwipeCardsViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as UITableViewCell
+        
+        let reuseIdentifier = "Cell"
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as UITableViewCell
+
         
         let greenColor = UIColor(red: 0/255, green: 131/255, blue: 143/255, alpha: 1.0)
         let gradientGreen: CAGradientLayer = CAGradientLayer()
@@ -584,14 +610,11 @@ extension ViewController: DMSwipeCardsViewDelegate {
         gradientGreen.locations = [0.0, 1.0]
         
     
-    
-        
         myTableView.rowHeight = 60
         
         
-        
-        let key   = Array(self.readListDic.keys)[indexPath.row]
-        let imgURL = NSURL(string: self.savedImageArr[indexPath.row])
+        let key   = Array(readListDic.keys)[indexPath.row]
+        let imgURL = NSURL(string: savedImageArr[indexPath.row])
         if imgURL != nil {
            
             let data = NSData(contentsOf: (imgURL as URL?)!)
@@ -607,7 +630,6 @@ extension ViewController: DMSwipeCardsViewDelegate {
             }
             
             
-            
             self.myTableView.backgroundColor = greenColor
             cell.textLabel?.textColor = UIColor.white
             cell.textLabel?.font = UIFont.systemFont(ofSize: CGFloat(self.labelSize2), weight: UIFont.Weight.thin)
@@ -615,15 +637,15 @@ extension ViewController: DMSwipeCardsViewDelegate {
             cell.textLabel?.numberOfLines = 3
             
             
-            
         }
         
         
         cell.textLabel?.text = readArray[indexPath.row]
-        
-        
+
         return cell
     }
+    
+
     
     // Button Tapped Catagories Functions
     @objc func buttonTechTapped(sender:UIButton) {
@@ -689,6 +711,7 @@ extension ViewController: DMSwipeCardsViewDelegate {
         }
         
     }
+    
     @objc func buttonSporTapped(sender:UIButton) {
         
         if buttonSporTap == true {
@@ -735,6 +758,8 @@ extension ViewController: DMSwipeCardsViewDelegate {
     
     @objc func buttonSineTapped(sender:UIButton) {
         
+        
+        
         if buttonSineTap == true {
             buttonSineTap = false
             sender.isSelected = !sender.isSelected;
@@ -754,4 +779,8 @@ extension ViewController: DMSwipeCardsViewDelegate {
         }
         
     }
+    
+    
 }
+
+
